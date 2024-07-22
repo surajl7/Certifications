@@ -1,11 +1,11 @@
-# Operations on strings: min()
+# Operations on strings: max()
 
-# Demonstrating min() - Example 1:
+# Demonstrating max() - Example 1:
 print()
 string = "aAbByYzZ"
 print("String: " + string)
 print()
-print("min value in string is -- " + min(string))
+print("max value in string is -- " + max(string))
 print()
 print("ASCII values of characters in the string:")
 for char in string:
@@ -14,22 +14,22 @@ for char in string:
 
 print()
 
-# Demonstrating min() - Examples 2:
+# Demonstrating max() - Examples 2:
 t = 'The Knights Who Say "Ni!"'
 print("String: " + t)
 print()
-print("min value in string is -- "+'[' + min(t) + ']')
+print("max value in string is -- "+'[' + max(t) + ']')
 print()
 for char in t:
     ascii_value = ord(char)
     print(f"ASCII value of '{char}' is: {ascii_value}")
 print()
 
-# Demonstrating min() - Examples 3:
+# Demonstrating max() - Examples 3:
 t = [0, 1, 2]
 print(f"String: {t}")
 print()
-print(f"min value in string is -- {min(t)}")
+print(f"max value in string is -- {max(t)}")
 print()
 for char in t:
     ascii_value = ord(chr(char))
