@@ -1,0 +1,33 @@
+$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/ubuntu/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/ubuntu/.ssh/id_rsa
+Your public key has been saved in /home/ubuntu/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:ZM74FyW2vrd1kXrv2pwOI5O7SIKFruonLd2fPco6SK4 ubuntu@codespaces-2e3e05
+The key's randomart image is:
++---[RSA 3072]----+
+|                 |
+|                 |
+|        o o .    |
+|      .* . +    .|
+|     ...S o    o |
+|   .. o. . .. . .|
+|  = oo ...o+ +...|
+| o *.o. =o..=.++o|
+|.E*. .+=.oo+o.o==|
++----[SHA256]-----+
+$ cat ~/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCkhyOTXtnRCuXGktC1XprzF1tr/OzOVuCmqSwQXmiHREBgcPTkNbiNK7GMsxaMzevonKBc/K6c5yDw3YIq0K69L+in/RzLCZL8ECqkRJQgotRFDVfM4M81lN+Sw3tuBlKZrrYKTTPC/P9CbJt6AlkKvvoi5U7YqZcp8d3f9yzYbYG3aZm/suYaQUfTu8jsaS5D5s2hCp21clhw3SZWIc7zP6RzRZ6vw8JT/cxgglM7FNMfGBDbz95myzoJCqIsHuw3wIssI44GmlRnxnYzbv8bIfrpi5cdW1vRQSZzESatkoHiHMuVFgvQ0ZNllEzq9gJuzEwjK5L3iSFPFB5xMoHMMtT/2ifQi0yvB7m+7aA0x4okYDlGl2Zif2FScu3paVUjr0A6wjJZQa1CUKs2T0mfCUthm+g6xJ+hTBhOv2eNQ3ZlUsT30fGJSqp/mNuMiAyIpSaTlUsSdWsBvf1I9KjYJQeqcnaJqdF6o1Oyhs2C0QpTLlWs59QKVITdWo8FUgs= ubuntu@codespaces-2e3e05
+$ ^C
+$ ^C
+$ ssh -T git@ssh.github.com -p 443
+The authenticity of host '[ssh.github.com]:443 ([20.205.243.160]:443)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '[ssh.github.com]:443' (ED25519) to the list of known hosts.
+Enter passphrase for key '/home/ubuntu/.ssh/id_rsa': 
+Hi surajlandage! You've successfully authenticated, but GitHub does not provide shell access.
